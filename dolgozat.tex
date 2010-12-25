@@ -1,0 +1,51 @@
+\documentclass[12pt,a4paper,english,magyar,oneside]{report}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc} % mert nem a középkorban vagyunk
+\usepackage{lmodern} %szépek lesznek tőle a betűk a pdfben
+\usepackage{graphicx}
+
+\usepackage[magyar]{babel}
+
+% 2.5 centis margó mindenütt, bal oldalt +1 centi kötésnek
+\usepackage{anysize}
+\paperwidth=21cm \paperheight29.7cm
+\marginsize{3.5cm}{2.5cm}{2.5cm}{2.5cm} % {bal}{jobb}{felső}{alsó}
+\addtolength\topmargin{-\headheight} \addtolength\topmargin{-\headsep}
+\addtolength\textheight{\headheight} \addtolength\textheight{\headsep}
+\addtolength\textheight{\footskip}
+\footskip=15pt
+\ifx\pdfoutput\UnDefined \newcount\pdfoutput \fi
+\ifnum0<\pdfoutput
+  \pdfpagewidth\paperwidth \pdfpageheight\paperheight \pdfcompresslevel9
+\else \special{papersize=21cm,29.7cm} \fi
+
+\sloppy % inkább a térközt nőjön minthogy sorok lógjanak ki
+
+\linespread{1.3} % Másfeles sorköz
+\frenchspacing   %Szimpla térköz mondatok között
+
+\begin{document}
+
+\include{coverpage} %fedlap
+
+\setcounter{tocdepth}{2} % tartalomjegyzék mélysége
+\tableofcontents % tartalomjegyzék
+
+\chapter*{Kivonat}
+
+A kivonat ide kerül.
+
+\selectlanguage{english}
+
+\chapter*{Abstract}
+
+Abstract goes here.
+
+\selectlanguage{magyar}
+
+\chapter{Bevezetés}
+
+% ide jön a dolgozat
+
+\end{document}
+
