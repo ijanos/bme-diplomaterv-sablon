@@ -1,3 +1,10 @@
+---------
+---------
+##  Ezek a fájlok több éve készültek. Azóta a Diplomaterv portálon elérhető egy sokkal részletesebb LaTeX sablon! 
+### Szinte biztosan jobban jársz ha azt használod. 
+---------
+---------
+
 BME Diplomaterv LaTeX sablon 
 ============================
 
